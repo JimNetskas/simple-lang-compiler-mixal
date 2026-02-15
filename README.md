@@ -90,14 +90,17 @@ int main() {
     a = 10 + 5;
     return a;
 }
-2. Run the Compiler
+```
+### 2. Run the Compiler
 Execute the main script via your terminal:
 
+```c
 Bash
 python main.py
-3. Check Outputs
+```
+### 3. Check Outputs
 The compiler creates an output/ directory containing the following files:
-
+```c
 lexical_analysis.txt: Stream of tokens found.
 
 ast_output.txt: The Abstract Syntax Tree structure.
@@ -107,11 +110,11 @@ symbol_table.txt: Variables and functions per scope.
 semantic_checks.txt: Results of semantic validation. If errors exist, compilation stops here.
 
 main.mixal: The final executable assembly code (generated only if no errors occur).
-
-💻 Running the MIXAL Code
+```
+### 💻 Running the MIXAL Code
 To execute the generated assembly, use a MIX emulator like GNU MDK (mixvm).
 +1
-
+```c
 Load the output file: output/main.mixal.
 
 Run it in your emulator:
@@ -138,6 +141,4 @@ method(1, 2) calling a function that expects 3 arguments.
 
 
 Division by zero (e.g., a = 10 / 0;).
-
-
-Project created for the course "Programming Languages and Compilers", September 2025.
+```
